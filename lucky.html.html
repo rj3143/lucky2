@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucky Murugan • AMMK | Porur</title>
+  <meta name="description" content="Official page for Lucky Murugan (AMMK), follower of T.T.V. Dhinakaran — Bilingual Tamil/English." />
+  <!-- Tailwind (CDN build for quick single‑file prototyping) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Simple fade for section reveal */
+    [data-animate] { opacity: 0; transform: translateY(10px); transition: opacity .5s ease, transform .5s ease; }
+    [data-animate].visible { opacity: 1; transform: translateY(0); }
+    /* Hide/show by language */
+    [data-lang="en"] .ta, [data-lang="ta"] .en { display: none; }
+  </style>
+  <!-- NOTE: Replace placeholder imagery and any party symbols with assets you have rights to use. Verify all claims before publishing. -->
+</head>
+<body class="text-slate-800 bg-white" data-lang="en">
+  <!-- NAV -->
+  <header class="backdrop-blur bg-white/80 sticky top-0 z-50 border-b">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <!-- AMMK symbol placeholder -->
+        <div class="h-9 w-9 rounded-full bg-gradient-to-br from-green-500 to-emerald-700 shadow"></div>
+        <span class="font-semibold tracking-wide">AMMK • Lucky Murugan</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#home" class="hover:text-emerald-700 en">Home</a>
+        <a href="#home" class="hover:text-emerald-700 ta">முகப்பு</a>
+        <a href="#about" class="hover:text-emerald-700 en">About</a>
+        <a href="#about" class="hover:text-emerald-700 ta">அறிமுகம்</a>
+        <a href="#leader" class="hover:text-emerald-700 en">Leader</a>
+        <a href="#leader" class="hover:text-emerald-700 ta">தலைவர்</a>
+        <a href="#legacy" class="hover:text-emerald-700 en">Jayalalithaa's Welfare</a>
+        <a href="#legacy" class="hover:text-emerald-700 ta">அம்மா நலத்திட்டங்கள்</a>
+        <a href="#reports" class="hover:text-emerald-700 en">Issues & Reports</a>
+        <a href="#reports" class="hover:text-emerald-700 ta">சிக்கல்கள் & அறிக்கைகள்</a>
+        <a href="#affected" class="hover:text-emerald-700 en">People Affected</a>
+        <a href="#affected" class="hover:text-emerald-700 ta">பாதிக்கப்பட்ட மக்கள்</a>
+        <a href="#contact" class="hover:text-emerald-700 en">Contact</a>
+        <a href="#contact" class="hover:text-emerald-700 ta">தொடர்பு</a>
+      </nav>
+      <button id="langToggle" class="px-3 py-1.5 rounded-2xl border shadow-sm text-sm hover:shadow transition en">தமிழ்</button>
+      <button id="langToggleTa" class="px-3 py-1.5 rounded-2xl border shadow-sm text-sm hover:shadow transition ta">English</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-emerald-50 via-white to-emerald-50"></div>
+    <div class="relative max-w-6xl mx-auto px-4 pt-16 pb-20 grid md:grid-cols-2 gap-10 items-center">
+      <div data-animate>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight en">Lucky Murugan</h1>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight ta">லக்கி முருகன்</h1>
+        <p class="mt-3 text-slate-600 text-lg en">AMMK — Amma Makkal Munnetra Kazhagam | Porur, Chennai</p>
+        <p class="mt-3 text-slate-600 text-lg ta">AMMK — அம்மா மக்கள் முன்னேற்றக் கழகம் | போர்ூர், சென்னை</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#contact" class="px-5 py-2.5 bg-emerald-600 text-white rounded-2xl shadow hover:bg-emerald-700 en">Volunteer</a>
+          <a href="#contact" class="px-5 py-2.5 bg-emerald-600 text-white rounded-2xl shadow hover:bg-emerald-700 ta">தன்னார்வலராக சேரவும்</a>
+          <a href="#about" class="px-5 py-2.5 border rounded-2xl shadow-sm hover:shadow en">Know More</a>
+          <a href="#about" class="px-5 py-2.5 border rounded-2xl shadow-sm hover:shadow ta">மேலும் அறிய</a>
+        </div>
+      </div>
+      <div data-animate class="relative">
+        <!-- Replace with permitted images -->
+        <div class="aspect-[4/3] rounded-3xl bg-white shadow-inner border p-2">
+          <div class="w-full h-full rounded-2xl bg-[url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-6xl mx-auto px-4 py-14">
+    <div data-animate>
+      <h2 class="text-2xl md:text-3xl font-bold en">About Lucky Murugan</h2>
+      <h2 class="text-2xl md:text-3xl font-bold ta">லக்கி முருகன் — அறிமுகம்</h2>
+      <p class="mt-3 text-slate-700 leading-relaxed en">Lucky Murugan is an active AMMK cadre and follower of T.T.V. Dhinakaran, working at the grassroots in and around Porur to address local needs and support people's welfare.</p>
+      <p class="mt-3 text-slate-700 leading-relaxed ta">T.T.V. தினகரன் அவர்களின் வழிகாட்டுதலின் கீழ் செயல்படும் AMMK தொண்டர் லக்கி முருகன், போர்ூர் சுற்றுவட்டார மக்களின் பிரச்சினைகளை தீர்க்கும் பணியில் தீவிரமாக ஈடுபட்டு வருகிறார்.</p>
+      <ul class="mt-5 grid md:grid-cols-3 gap-3">
+        <li class="p-4 rounded-2xl border bg-white shadow-sm en">Focus on civic issues: water, sanitation, roads</li>
+        <li class="p-4 rounded-2xl border bg-white shadow-sm en">Support for youth employment & skills</li>
+        <li class="p-4 rounded-2xl border bg-white shadow-sm en">Transparent, people‑first engagement</li>
+        <li class="p-4 rounded-2xl border bg-white shadow-sm ta">குடிநீர், கழிவு நீர், சாலை போன்ற நகர்ப்புற அடிக்கோளங்கள்</li>
+        <li class="p-4 rounded-2xl border bg-white shadow-sm ta">இளைஞர் வேலைவாய்ப்பு & திறன் மேம்பாடு</li>
+        <li class="p-4 rounded-2xl border bg-white shadow-sm ta">வெளிப்படையான, மக்கள் மைய அணுகுமுறை</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LEADER -->
+  <section id="leader" class="bg-gradient-to-br from-white to-emerald-50 border-y">
+    <div class="max-w-6xl mx-auto px-4 py-14 grid md:grid-cols-2 gap-10 items-center">
+      <div data-animate>
+        <h2 class="text-2xl md:text-3xl font-bold en">Leader — T.T.V. Dhinakaran</h2>
+        <h2 class="text-2xl md:text-3xl font-bold ta">தலைவர் — T.T.V. தினகரன்</h2>
+        <p class="mt-3 text-slate-700 leading-relaxed en">Guided by the leadership of T.T.V. Dhinakaran, AMMK aims to uphold Amma's legacy and ensure responsive governance that listens to every household.</p>
+        <p class="mt-3 text-slate-700 leading-relaxed ta">அம்மாவின் பாரம்பரியத்தை நிலைநிறுத்தி, ஒவ்வொரு இல்லத்திற்கும் செவிசாய்க்கும் நிர்வாகத்தை உருவாக்கும் நோக்கில் AMMK செயல்படுகிறது.</p>
+      </div>
+      <div data-animate>
+        <div class="aspect-[4/3] rounded-3xl bg-white shadow-inner border p-2">
+          <div class="w-full h-full rounded-2xl bg-[url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGACY -->
+  <section id="legacy" class="max-w-6xl mx-auto px-4 py-14">
+    <div data-animate>
+      <h2 class="text-2xl md:text-3xl font-bold en">Jayalalithaa's Welfare Schemes (Highlights)</h2>
+      <h2 class="text-2xl md:text-3xl font-bold ta">அம்மா நலத்திட்டங்கள் (முக்கியங்கள்)</h2>
+      <p class="mt-2 text-sm text-slate-600 en">Below are example placeholders. Replace with the exact scheme names, years, and verified details.</p>
+      <p class="mt-2 text-sm text-slate-600 ta">கீழே கொடுக்கப்பட்டுள்ளவை எடுத்துக்காட்டு இடப்பூர்த்திகள். திட்டத்தின் சரியான பெயர், ஆண்டு, துல்லியமான விவரங்களைச் சேர்க்கவும்.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+        <div class="p-5 rounded-3xl border bg-white shadow-sm">
+          <h3 class="font-semibold text-lg en">Amma Canteen (Subsidized Meals)</h3>
+          <h3 class="font-semibold text-lg ta">அம்மா உணவகம்</h3>
+          <p class="mt-2 text-slate-700 leading-relaxed en">Affordable, hygienic meals aimed at supporting urban poor and working communities.</p>
+          <p class="mt-2 text-slate-700 leading-relaxed ta">நகர்ப்புற ஏழைகள் மற்றும் தொழிலாளர் மக்களுக்கு குறைந்த கட்டணத்தில் சத்துள்ள உணவு.</p>
+        </div>
+        <div class="p-5 rounded-3xl border bg-white shadow-sm">
+          <h3 class="font-semibold text-lg en">Amma Pharmacy / Cement / Water Initiatives</h3>
+          <h3 class="font-semibold text-lg ta">அம்மா மருந்தகம் / சிமெண்டு / குடிநீர் முயற்சிகள்</h3>
+          <p class="mt-2 text-slate-700 leading-relaxed en">Citizen‑centric pricing and access to essentials to reduce household costs.</p>
+          <p class="mt-2 text-slate-700 leading-relaxed ta">மக்கள் நலனை கருத்தில் கொண்டு மலிவான விலையில் அத்தியாவசிய பொருட்கள்.</p>
+        </div>
+        <div class="p-5 rounded-3xl border bg-white shadow-sm">
+          <h3 class="font-semibold text-lg en">Education & Girl‑Child Support</h3>
+          <h3 class="font-semibold text-lg ta">கல்வி & சிறுமி ஆதரவு</h3>
+          <p class="mt-2 text-slate-700 leading-relaxed en">Scholarships, bicycles, laptops, and incentives to improve enrolment and retention.</p>
+          <p class="mt-2 text-slate-700 leading-relaxed ta">உதவித்தொகைகள், சைக்கிள்கள், லாப்டாப்கள் உள்ளிட்ட ஊக்கத்திட்டங்கள்.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPORTS -->
+  <section id="reports" class="bg-gradient-to-br from-emerald-50 to-white border-y">
+    <div class="max-w-6xl mx-auto px-4 py-14">
+      <div data-animate>
+        <h2 class="text-2xl md:text-3xl font-bold en">Issues & Reports (for Public Review)</h2>
+        <h2 class="text-2xl md:text-3xl font-bold ta">சிக்கல்கள் & பொதுமக்கள் அறிக்கைகள்</h2>
+        <p class="mt-2 text-sm text-slate-600 en">Add fact‑checked content only. Include dates, locations, outcomes, and source links. Claims must be verifiable before publication.</p>
+        <p class="mt-2 text-sm text-slate-600 ta">உறுதியான ஆதாரங்களுடன் மட்டுமே தகவலை பதிவிடவும். தேதி, இடம், முடிவு மற்றும் மூலம் இணைப்பைச் சேர்க்கவும்.</p>
+
+        <div class="mt-6 overflow-x-auto">
+          <table id="reportsTable" class="w-full text-left text-sm border-separate [border-spacing:0] rounded-2xl overflow-hidden">
+            <thead>
+              <tr class="bg-white">
+                <th class="p-3 border-b font-semibold en">Title</th>
+                <th class="p-3 border-b font-semibold en">Summary</th>
+                <th class="p-3 border-b font-semibold en">Source URL</th>
+                <th class="p-3 border-b font-semibold ta">தலைப்பு</th>
+                <th class="p-3 border-b font-semibold ta">சுருக்கம்</th>
+                <th class="p-3 border-b font-semibold ta">மூலம் URL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="odd:bg-white even:bg-emerald-50/40">
+                <td class="p-3 border-b align-top en">Example: Civic Grievance in Ward X</td>
+                <td class="p-3 border-b align-top en">Residents reported sewage overflow for 10 days; petition submitted with photos.</td>
+                <td class="p-3 border-b align-top en"><a class="text-emerald-700 underline break-all" href="https://example.com/source" target="_blank" rel="noreferrer">https://example.com/source</a></td>
+                <td class="p-3 border-b align-top ta">எடுத்துக்காட்டு: வார்டு X - குடிநீர் புகார்</td>
+                <td class="p-3 border-b align-top ta">10 நாட்களுக்கு கழிவு நீர் நிரம்பியது; புகைப்படங்களுடன் மனு சமர்ப்பிக்கப்பட்டது.</td>
+                <td class="p-3 border-b align-top ta"><a class="text-emerald-700 underline break-all" href="https://example.com/source" target="_blank" rel="noreferrer">https://example.com/source</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <form id="reportsForm" class="mt-6 grid md:grid-cols-3 gap-3">
+          <input id="repTitle" placeholder="Title / தலைப்பு" class="p-3 rounded-2xl border bg-white" />
+          <input id="repSummary" placeholder="Summary / சுருக்கம்" class="p-3 rounded-2xl border bg-white" />
+          <input id="repUrl" placeholder="Source URL / மூலம் URL" class="p-3 rounded-2xl border bg-white" />
+          <div class="md:col-span-3">
+            <button type="submit" class="px-4 py-2 rounded-2xl bg-emerald-600 text-white hover:bg-emerald-700 shadow">+ Add Row</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- AFFECTED -->
+  <section id="affected" class="max-w-6xl mx-auto px-4 py-14">
+    <div data-animate>
+      <h2 class="text-2xl md:text-3xl font-bold en">People Affected by Current Ruling (DMK)</h2>
+      <h2 class="text-2xl md:text-3xl font-bold ta">தற்போதைய ஆட்சியில் (DMK) பாதிக்கப்பட்ட மக்கள்</h2>
+      <p class="mt-2 text-sm text-slate-600 en">This section lists common areas of public impact. Add LOCAL, VERIFIABLE cases with dates, names (with consent), and evidence links. Avoid defamatory or unverified claims.</p>
+      <p class="mt-2 text-sm text-slate-600 ta">பொதுவான பாதிப்பு பகுதிகள் பட்டியல். உள்ளூர், சரிபார்க்கக்கூடிய வழக்குகளை தேதி, பெயர் (ஒப்புதல்), ஆதாரம் இணைப்புடன் சேர்க்கவும். உறுதி செய்யப்படாத/தூற்றல் உள்ளடக்கத்தை தவிர்க்கவும்.</p>
+
+      <!-- Categories as details -->
+      <div class="mt-6 grid md:grid-cols-2 gap-4">
+        <!-- Cost of Living -->
+        <details class="group rounded-3xl border bg-white shadow-sm">
+          <summary class="cursor-pointer list-none p-5 flex items-center justify-between"><span class="font-semibold en">Cost of Living & Tariffs</span><span class="font-semibold ta">வாழ்க்கைச் செலவும் கட்டணங்களும்</span><span class="text-slate-400 group-open:rotate-180 transition">▼</span></summary>
+          <div class="px-5 pb-5">
+            <ul class="list-disc pl-6 text-slate-700 space-y-2">
+              <li class="en">Rise in prices of essentials and household expenses.</li>
+              <li class="en">Electricity tariff revisions impacting domestic and small business consumers.</li>
+              <li class="en">Fuel price burden increasing transport and goods costs.</li>
+              <li class="ta">அத்தியாவசிய பொருட்களின் விலை உயர்வு.</li>
+              <li class="ta">மின்சார கட்டண மாற்றங்கள் — வீட்டு/சிறுதொழில்களுக்கு பாதிப்பு.</li>
+              <li class="ta">எரிபொருள் விலைசுமை — போக்குவரத்து/சரக்கு செலவு அதிகரிப்பு.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Jobs/MSMEs -->
+        <details class="group rounded-3xl border bg-white shadow-sm">
+          <summary class="cursor-pointer list-none p-5 flex items-center justify-between"><span class="font-semibold en">Jobs, MSMEs & Traders</span><span class="font-semibold ta">வேலைவாய்ப்பு, MSME & வியாபாரிகள்</span><span class="text-slate-400 group-open:rotate-180 transition">▼</span></summary>
+          <div class="px-5 pb-5">
+            <ul class="list-disc pl-6 text-slate-700 space-y-2">
+              <li class="en">Slower job creation and hiring freezes in select sectors.</li>
+              <li class="en">Licensing/permit delays affecting small traders and micro‑enterprises.</li>
+              <li class="en">Payment delays in government tenders and vendor bills.</li>
+              <li class="ta">சில துறைகளில் வேலைவாய்ப்பு மந்தநிலை.</li>
+              <li class="ta">அனுமதி/லைசன்ஸ் தாமதங்கள் — சிறுவியாபாரங்களுக்கு சிரமம்.</li>
+              <li class="ta">அரசு டெண்டர்/வெண்டர் பில்கள் செலுத்தும் தாமதங்கள்.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Farmers/Water -->
+        <details class="group rounded-3xl border bg-white shadow-sm">
+          <summary class="cursor-pointer list-none p-5 flex items-center justify-between"><span class="font-semibold en">Farmers & Water Management</span><span class="font-semibold ta">விவசாயிகள் & நீர் மேலாண்மை</span><span class="text-slate-400 group-open:rotate-180 transition">▼</span></summary>
+          <div class="px-5 pb-5">
+            <ul class="list-disc pl-6 text-slate-700 space-y-2">
+              <li class="en">Delayed subsidies/insurance settlements in some districts.</li>
+              <li class="en">Irrigation and water sharing issues affecting crop cycles.</li>
+              <li class="en">Price realization challenges for perishables due to market volatility.</li>
+              <li class="ta">துணைத் தொகை/காப்பீடு வழங்கலில் தாமதம்.</li>
+              <li class="ta">பாசன நீர் விடுவிப்பு/பகிர்வு சிக்கல்கள் — பயிர்சுழற்சி பாதிப்பு.</li>
+              <li class="ta">காய்கறி/பழ விலை நிலைமாறுதல் — வருவாய் சவால்கள்.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Law & Order -->
+        <details class="group rounded-3xl border bg-white shadow-sm">
+          <summary class="cursor-pointer list-none p-5 flex items-center justify-between"><span class="font-semibold en">Law & Order / Public Safety</span><span class="font-semibold ta">சட்டம் & ஒழுங்கு/பாதுகாப்பு</span><span class="text-slate-400 group-open:rotate-180 transition">▼</span></summary>
+          <div class="px-5 pb-5">
+            <ul class="list-disc pl-6 text-slate-700 space-y-2">
+              <li class="en">Concerns over crime and local safety in specific pockets.</li>
+              <li class="en">Women’s safety incidents and inadequate lighting or patrolling.</li>
+              <li class="ta">சில பகுதிகளில் குற்றச்செயல்கள் குறித்த கவலைகள்.</li>
+              <li class="ta">பெண்கள் பாதுகாப்பு — தெருவிளக்கு/காவல் பற்றாக்குறை குறைகள்.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Education -->
+        <details class="group rounded-3xl border bg-white shadow-sm">
+          <summary class="cursor-pointer list-none p-5 flex items-center justify-between"><span class="font-semibold en">Education</span><span class="font-semibold ta">கல்வி</span><span class="text-slate-400 group-open:rotate-180 transition">▼</span></summary>
+          <div class="px-5 pb-5">
+            <ul class="list-disc pl-6 text-slate-700 space-y-2">
+              <li class="en">Irregular disbursal of scholarships/benefits in some cases.</li>
+              <li class="en">Infrastructure gaps in select government schools and colleges.</li>
+              <li class="en">Fee pressures on parents in private institutions.</li>
+              <li class="ta">உதவித்தொகை/பலன்கள் வழங்கலில் இடையூறு.</li>
+              <li class="ta">சில அரசு பள்ளி/கல்லூரிகளில் அடிப்படை வசதி குறைபாடுகள்.</li>
+              <li class="ta">தனியார் கல்வி கட்டணச் சுமை.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Healthcare -->
+        <details class="group rounded-3xl border bg-white shadow-sm">
+          <summary class="cursor-pointer list-none p-5 flex items-center justify-between"><span class="font-semibold en">Healthcare</span><span class="font-semibold ta">மருத்துவம்</span><span class="text-slate-400 group-open:rotate-180 transition">▼</span></summary>
+          <div class="px-5 pb-5">
+            <ul class="list-disc pl-6 text-slate-700 space-y-2">
+              <li class="en">Overcrowding and resource shortages at certain government hospitals.</li>
+              <li class="en">Intermittent medicine/consumable stock‑outs.</li>
+              <li class="ta">சில அரசு மருத்துவமனைகளில் கூட்டம்/வளத் தட்டுப்பாடு.</li>
+              <li class="ta">மருந்து/நுகர்வுப் பொருட்களின் தற்காலிக பற்றாக்குறை.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Civic Services -->
+        <details class="group rounded-3xl border bg-white shadow-sm">
+          <summary class="cursor-pointer list-none p-5 flex items-center justify-between"><span class="font-semibold en">Urban Civic Services</span><span class="font-semibold ta">நகர்ப்புற அடிப்படை சேவைகள்</span><span class="text-slate-400 group-open:rotate-180 transition">▼</span></summary>
+          <div class="px-5 pb-5">
+            <ul class="list-disc pl-6 text-slate-700 space-y-2">
+              <li class="en">Water supply interruptions and sewage overflow complaints.</li>
+              <li class="en">Road damage, potholes, and slow maintenance cycles.</li>
+              <li class="en">Solid waste management lapses and mosquito menace in monsoons.</li>
+              <li class="ta">குடிநீர் விநியோக தடைகள், கழிவு நீர் நிரம்பல் புகார்கள்.</li>
+              <li class="ta">சாலைகள் சேதம், குழிப்பாதைகள், பராமரிப்பு தாமதம்.</li>
+              <li class="ta">தூய்மை/குப்பை மேலாண்மை குறைபாடுகள், பருவமழையில் கொசு தொல்லை.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Welfare & Transparency -->
+        <details class="group rounded-3xl border bg-white shadow-sm">
+          <summary class="cursor-pointer list-none p-5 flex items-center justify-between"><span class="font-semibold en">Welfare Delivery & Transparency</span><span class="font-semibold ta">நலத் திட்ட விநியோகம் & வெளிப்படைத் தன்மை</span><span class="text-slate-400 group-open:rotate-180 transition">▼</span></summary>
+          <div class="px-5 pb-5">
+            <ul class="list-disc pl-6 text-slate-700 space-y-2">
+              <li class="en">Delays or exclusions in beneficiary lists and scheme rollouts.</li>
+              <li class="en">Perceived corruption/undue influence in local offices.</li>
+              <li class="ta">பட்டியலிடலில் தாமதம்/விலக்கு, திட்ட அமலாக்க தாமதம்.</li>
+              <li class="ta">உள்ளூர் அலுவலகங்களில் ஊழல்/அதிகாரம் தவறாகப் பயன்படுத்துதல் குற்றச்சாட்டுகள்.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Taxes/Compliance -->
+        <details class="group rounded-3xl border bg-white shadow-sm">
+          <summary class="cursor-pointer list-none p-5 flex items-center justify-between"><span class="font-semibold en">Taxes, Fees & Compliance</span><span class="font-semibold ta">வரி, கட்டணம் & ஒழுங்குமுறை</span><span class="text-slate-400 group-open:rotate-180 transition">▼</span></summary>
+          <div class="px-5 pb-5">
+            <ul class="list-disc pl-6 text-slate-700 space-y-2">
+              <li class="en">Hikes in local levies/charges increasing household and business costs.</li>
+              <li class="en">Complex compliance for small traders without adequate support.</li>
+              <li class="ta">உள்ளூர் வரிகள்/கட்டண உயர்வு — குடும்ப/தொழில் செலவுகள் அதிகரிப்பு.</li>
+              <li class="ta">சிறுவியாபாரிகளுக்கு ஒழுங்குமுறை சிக்கல்கள் — போதிய வழிகாட்டல் இல்லாமை.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <!-- Add Case Form -->
+      <div class="mt-10 p-5 rounded-3xl border bg-emerald-50/50" data-animate>
+        <h3 class="font-semibold en">Add a Verified Case</h3>
+        <h3 class="font-semibold ta">சரிபார்க்கப்பட்ட வழக்கை சேர்க்கவும்</h3>
+        <form id="caseForm" class="mt-4 grid md:grid-cols-2 gap-3">
+          <input id="cName" class="p-3 rounded-2xl border bg-white" placeholder="Name (optional) / பெயர் (விருப்பம்)" />
+          <input id="cLocation" required class="p-3 rounded-2xl border bg-white" placeholder="Location / இடம்" />
+          <input id="cDate" type="date" required class="p-3 rounded-2xl border bg-white" />
+          <select id="cCategory" class="p-3 rounded-2xl border bg-white">
+            <option value="">Category / பகுப்பு</option>
+            <option>Cost of Living & Tariffs</option>
+            <option>Jobs, MSMEs & Traders</option>
+            <option>Farmers & Water Management</option>
+            <option>Law & Order / Public Safety</option>
+            <option>Education</option>
+            <option>Healthcare</option>
+            <option>Urban Civic Services</option>
+            <option>Welfare Delivery & Transparency</option>
+            <option>Taxes, Fees & Compliance</option>
+          </select>
+          <textarea id="cDesc" required class="md:col-span-2 p-3 rounded-2xl border bg-white min-h-[120px]" placeholder="Description (what happened) / விளக்கம் (என்ன நடந்தது)"></textarea>
+          <input id="cSource" class="md:col-span-2 p-3 rounded-2xl border bg-white" placeholder="Source URL (evidence) / மூலம் URL (ஆதாரம்)" />
+          <label class="md:col-span-2 flex items-center gap-2 text-sm text-slate-600">
+            <input id="cConsent" type="checkbox" />
+            <span class="en">I have consent to share this information</span>
+            <span class="ta">இந்த தகவலைப் பகிர அனுமதி உள்ளது</span>
+          </label>
+          <div class="md:col-span-2">
+            <button class="px-4 py-2 rounded-2xl bg-emerald-600 text-white hover:bg-emerald-700 shadow">Add Case / வழக்கைச் சேர்க்கவும்</button>
+          </div>
+        </form>
+
+        <div id="caseWrap" class="hidden mt-6 overflow-x-auto">
+          <table class="w-full text-left text-sm border-separate [border-spacing:0] rounded-2xl overflow-hidden">
+            <thead>
+              <tr class="bg-white">
+                <th class="p-3 border-b font-semibold">Name</th>
+                <th class="p-3 border-b font-semibold">Location</th>
+                <th class="p-3 border-b font-semibold">Date</th>
+                <th class="p-3 border-b font-semibold">Category</th>
+                <th class="p-3 border-b font-semibold">Description</th>
+                <th class="p-3 border-b font-semibold">Source</th>
+              </tr>
+            </thead>
+            <tbody id="caseTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-14">
+    <div data-animate>
+      <h2 class="text-2xl md:text-3xl font-bold en">Contact</h2>
+      <h2 class="text-2xl md:text-3xl font-bold ta">தொடர்பு</h2>
+      <div class="grid md:grid-cols-3 gap-6 mt-6">
+        <div class="md:col-span-2 p-5 rounded-3xl border bg-white shadow-sm">
+          <h3 class="font-semibold en">Office / Area</h3>
+          <h3 class="font-semibold ta">அலுவலகம் / பகுதி</h3>
+          <p class="mt-2 text-slate-700 en">Porur, Chennai — Reach out for local issues, volunteering, and events.</p>
+          <p class="mt-2 text-slate-700 ta">போர்ூர், சென்னை — உள்ளூர் பிரச்சினைகள், தன்னார்வம், நிகழ்வுகள் தொடர்பாக தொடர்புகொள்ளவும்.</p>
+          <div class="mt-4 grid sm:grid-cols-2 gap-3">
+            <div class="p-4 rounded-2xl border bg-emerald-50">
+              <div class="text-xs text-slate-500 en">Phone</div>
+              <div class="text-xs text-slate-500 ta">தொலைபேசி</div>
+              <div class="font-medium">+91-XXXXXXXXXX</div>
+            </div>
+            <div class="p-4 rounded-2xl border bg-emerald-50">
+              <div class="text-xs text-slate-500 en">Email</div>
+              <div class="text-xs text-slate-500 ta">மின்னஞ்சல்</div>
+              <div class="font-medium">contact@lucky-murugan.in</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-5 rounded-3xl border bg-white shadow-sm">
+          <h3 class="font-semibold">Map</h3>
+          <p class="mt-2 text-slate-700 text-sm en">Embed a Google Map iframe for Porur here if you have an API/Embed link.</p>
+          <p class="mt-2 text-slate-700 text-sm ta">Google Map iframe ஐ (போர்ூர்) இங்கு பதியலாம்.</p>
+          <div class="mt-3 aspect-video rounded-2xl bg-slate-100 flex items-center justify-center text-slate-400">
+            <span>Map placeholder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-sm text-slate-600 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+      <div class="en">Paid for by supporters of Lucky Murugan (AMMK). Please verify all facts and sources before publication.</div>
+      <div class="ta">லக்கி முருகன் (AMMK) ஆதரவாளர்கள் சார்பில் வெளியீடு. வெளியீட்டிற்கு முன் அனைத்து தகவல்களும் சரிபார்க்கப்பட வேண்டும்.</div>
+      <div class="flex items-center gap-2 text-xs"><span>© <span id="year"></span> Lucky Murugan</span><span>•</span><a class="underline" href="#home">Back to top</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // Language toggle
+    const root = document.body;
+    const toTa = document.getElementById('langToggle');
+    const toEn = document.getElementById('langToggleTa');
+    function setLang(l){ root.setAttribute('data-lang', l); localStorage.setItem('lm_lang', l); }
+    toTa.addEventListener('click', ()=> setLang('ta'));
+    toEn.addEventListener('click', ()=> setLang('en'));
+    const saved = localStorage.getItem('lm_lang');
+    if(saved) setLang(saved);
+    // Prefer Tamil if browser language starts with ta
+    if(!saved && navigator.language && navigator.language.toLowerCase().startsWith('ta')) setLang('ta');
+
+    // Simple in-view animation
+    const ob = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('[data-animate]').forEach(el=>ob.observe(el));
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Reports add row
+    document.getElementById('reportsForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const title = document.getElementById('repTitle').value.trim();
+      const summary = document.getElementById('repSummary').value.trim();
+      const url = document.getElementById('repUrl').value.trim();
+      if(!title || !summary) return;
+      const tr = document.createElement('tr');
+      tr.className = 'odd:bg-white even:bg-emerald-50/40';
+      tr.innerHTML = `
+        <td class="p-3 border-b align-top en"></td>
+        <td class="p-3 border-b align-top en"></td>
+        <td class="p-3 border-b align-top en"></td>
+        <td class="p-3 border-b align-top ta"></td>
+        <td class="p-3 border-b align-top ta"></td>
+        <td class="p-3 border-b align-top ta"></td>`;
+      tr.children[0].textContent = title;
+      tr.children[1].textContent = summary;
+      if(url){ const a = document.createElement('a'); a.className='text-emerald-700 underline break-all'; a.target='_blank'; a.rel='noreferrer'; a.href=url; a.textContent=url; tr.children[2].appendChild(a); }
+      // Mirror into Tamil columns if you paste Tamil text directly; otherwise leave blank for translation later.
+      document.getElementById('reportsTable').querySelector('tbody').appendChild(tr);
+      this.reset();
+    });
+
+    // Cases add & render (kept in memory for demo)
+    const cForm = document.getElementById('caseForm');
+    const cWrap = document.getElementById('caseWrap');
+    const cTable = document.getElementById('caseTable');
+    cForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('cName').value.trim();
+      const location = document.getElementById('cLocation').value.trim();
+      const date = document.getElementById('cDate').value;
+      const category = document.getElementById('cCategory').value;
+      const desc = document.getElementById('cDesc').value.trim();
+      const source = document.getElementById('cSource').value.trim();
+      const consent = document.getElementById('cConsent').checked;
+      if(!consent || !location || !date || !desc) return;
+      const tr = document.createElement('tr');
+      tr.className = 'odd:bg-white even:bg-emerald-50/40';
+      tr.innerHTML = `
+        <td class="p-3 border-b align-top"></td>
+        <td class="p-3 border-b align-top"></td>
+        <td class="p-3 border-b align-top"></td>
+        <td class="p-3 border-b align-top"></td>
+        <td class="p-3 border-b align-top whitespace-pre-wrap"></td>
+        <td class="p-3 border-b align-top"></td>`;
+      tr.children[0].textContent = name || '—';
+      tr.children[1].textContent = location;
+      tr.children[2].textContent = date;
+      tr.children[3].textContent = category || '—';
+      tr.children[4].textContent = desc;
+      if(source){ const a = document.createElement('a'); a.className='text-emerald-700 underline break-all'; a.target='_blank'; a.rel='noreferrer'; a.href=source; a.textContent=source; tr.children[5].appendChild(a); }
+      cTable.appendChild(tr);
+      cWrap.classList.remove('hidden');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
