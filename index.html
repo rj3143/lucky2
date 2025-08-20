@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 // Notes:
 // 1) Replace placeholder images/logos below with your own assets.
 // 2) Using any party symbol/logo may require permission from the rights holder/election authority.
-// 3) The "Reports" section is structured for you to add sources/citations. Please verify claims before publishing.
+// 3) All claims in "Reports" and "People Affected" must be verifiable; add sources before publishing.
 
 const content = {
   en: {
@@ -17,6 +17,7 @@ const content = {
       leader: "Leader",
       legacy: "Jayalalithaa's Welfare",
       reports: "Issues & Reports",
+      affected: "People Affected",
       contact: "Contact",
     },
     hero: {
@@ -77,6 +78,94 @@ const content = {
         },
       ],
     },
+    affected: {
+      heading: "People Affected by Current Ruling (DMK)",
+      disclaimer:
+        "This section lists common areas of public impact. Add LOCAL, VERIFIABLE cases with dates, names (with consent), and evidence links. Avoid defamatory or unverified claims.",
+      categories: [
+        {
+          area: "Cost of Living & Tariffs",
+          impacts: [
+            "Rise in prices of essentials and household expenses.",
+            "Electricity tariff revisions impacting domestic and small business consumers.",
+            "Fuel price burden increasing transport and goods costs.",
+          ],
+        },
+        {
+          area: "Jobs, MSMEs & Traders",
+          impacts: [
+            "Slower job creation and hiring freezes in select sectors.",
+            "Licensing/permit delays affecting small traders and micro‑enterprises.",
+            "Payment delays in government tenders and vendor bills.",
+          ],
+        },
+        {
+          area: "Farmers & Water Management",
+          impacts: [
+            "Delayed subsidies/insurance settlements in some districts.",
+            "Irrigation release and water sharing issues affecting crop cycles.",
+            "Price realization challenges for perishables due to market volatility.",
+          ],
+        },
+        {
+          area: "Law & Order / Public Safety",
+          impacts: [
+            "Concerns over crime and local safety in specific pockets.",
+            "Women’s safety incidents and inadequate street lighting or patrolling.",
+          ],
+        },
+        {
+          area: "Education",
+          impacts: [
+            "Irregular disbursal of scholarships/benefits in some cases.",
+            "Infrastructure gaps in select government schools and colleges.",
+            "Fee pressures on parents in private institutions.",
+          ],
+        },
+        {
+          area: "Healthcare",
+          impacts: [
+            "Overcrowding and resource shortages at certain government hospitals.",
+            "Medicine/consumable stock‑outs reported intermittently.",
+          ],
+        },
+        {
+          area: "Urban Civic Services",
+          impacts: [
+            "Water supply interruptions and sewage overflow complaints.",
+            "Road damage, potholes, and slow maintenance cycles.",
+            "Solid waste management lapses and mosquito menace in monsoons.",
+          ],
+        },
+        {
+          area: "Welfare Delivery & Transparency",
+          impacts: [
+            "Delays or exclusions in beneficiary lists and scheme rollouts.",
+            "Perceived corruption/undue influence in local offices.",
+          ],
+        },
+        {
+          area: "Taxes, Fees & Compliance",
+          impacts: [
+            "Hikes in local levies/charges increasing household and business costs.",
+            "Complex compliance for small traders without adequate support.",
+          ],
+        },
+      ],
+      form: {
+        title: "Add a Verified Case",
+        labels: {
+          name: "Name (optional)",
+          location: "Location",
+          date: "Date",
+          category: "Category",
+          description: "Description (what happened)",
+          source: "Source URL (evidence)",
+          consent: "I have consent to share this information",
+          submit: "Add Case",
+        },
+      },
+    },
     contact: {
       heading: "Contact",
       addressTitle: "Office / Area",
@@ -105,6 +194,7 @@ const content = {
       leader: "தலைவர்",
       legacy: "அம்மா நலத்திட்டங்கள்",
       reports: "சிக்கல்கள் & அறிக்கைகள்",
+      affected: "பாதிக்கப்பட்ட மக்கள்",
       contact: "தொடர்பு",
     },
     hero: {
@@ -165,6 +255,94 @@ const content = {
         },
       ],
     },
+    affected: {
+      heading: "தற்போதைய ஆட்சியில் (DMK) பாதிக்கப்பட்ட மக்கள்",
+      disclaimer:
+        "பொதுவான பாதிப்பு பகுதிகள் பட்டியல். உள்ளூர், சரிபார்க்கக்கூடிய வழக்குகளை தேதி, பெயர் (ஒப்புதல்), ஆதாரம் இணைப்புடன் சேர்க்கவும். உறுதி செய்யப்படாத/தூற்றல் உள்ளடக்கத்தை தவிர்க்கவும்.",
+      categories: [
+        {
+          area: "வாழ்க்கைச் செலவும் கட்டணங்களும்",
+          impacts: [
+            "அத்தியாவசிய பொருட்களின் விலை உயர்வு.",
+            "மின்சார கட்டண மாற்றங்கள் — வீட்டு/சிறுதொழில்களுக்கு பாதிப்பு.",
+            "எரிபொருள் விலைசுமை — போக்குவரத்து/சரக்கு செலவு அதிகரிப்பு.",
+          ],
+        },
+        {
+          area: "வேலைவாய்ப்பு, MSME & வியாபாரிகள்",
+          impacts: [
+            "சில துறைகளில் வேலைவாய்ப்பு மந்தநிலை.",
+            "அனுமதி/லைசன்ஸ் தாமதங்கள் — சிறுவியாபாரங்களுக்கு சிரமம்.",
+            "அரசு டெண்டர்/வெண்டர் பில்கள் செலுத்தும் தாமதங்கள்.",
+          ],
+        },
+        {
+          area: "விவசாயிகள் & நீர் மேலாண்மை",
+          impacts: [
+            "துணைத் தொகை/காப்பீடு வழங்கலில் தாமதம்.",
+            "பாசன நீர் விடுவிப்பு/பகிர்வு சிக்கல்கள் — பயிர்சுழற்சி பாதிப்பு.",
+            "காய்கறி/பழ விலை நிலைமாறுதல் — வருவாய் சவால்கள்.",
+          ],
+        },
+        {
+          area: "சட்டம் & ஒழுங்கு/பாதுகாப்பு",
+          impacts: [
+            "சில பகுதிகளில் குற்றச்செயல்கள் குறித்த கவலைகள்.",
+            "பெண்கள் பாதுகாப்பு — தெருவிளக்கு/காவல் பற்றாக்குறை குறைகள்.",
+          ],
+        },
+        {
+          area: "கல்வி",
+          impacts: [
+            "உதவித்தொகை/பலன்கள் வழங்கலில் இடையூறு.",
+            "சில அரசு பள்ளி/கல்லூரிகளில் மென்பொருள்/அடிப்படை வசதி குறைபாடுகள்.",
+            "தனியார் கல்வி கட்டணச் சுமை.",
+          ],
+        },
+        {
+          area: "மருத்துவம்",
+          impacts: [
+            "சில அரசு மருத்துவமனைகளில் கூட்டம்/வளத் தட்டுப்பாடு.",
+            "மருந்து/நுகர்வுப் பொருட்களின் தற்காலிக பற்றாக்குறை.",
+          ],
+        },
+        {
+          area: "நகர்ப்புற அடிப்படை சேவைகள்",
+          impacts: [
+            "குடிநீர் விநியோக தடைகள், கழிவு நீர் நிரம்பல் புகார்கள்.",
+            "சாலைகள் சேதம், குழிப்பாதைகள், பராமரிப்பு தாமதம்.",
+            "தூய்மை/குப்பை மேலாண்மை குறைபாடுகள், பருவமழையில் கொசு தொல்லை.",
+          ],
+        },
+        {
+          area: "நலத் திட்ட விநியோகம் & வெளிப்படைத் தன்மை",
+          impacts: [
+            "பட்டியலிடலில் தாமதம்/விலக்கு, திட்ட அமலாக்க தாமதம்.",
+            "உள்ளூர் அலுவலகங்களில் ஊழல்/அதிகாரம் தவறாகப் பயன்படுத்துதல் குற்றச்சாட்டுகள்.",
+          ],
+        },
+        {
+          area: "வரி, கட்டணம் & ஒழுங்குமுறை",
+          impacts: [
+            "உள்ளூர் வரிகள்/கட்டண உயர்வு — குடும்ப/தொழில் செலவுகள் அதிகரிப்பு.",
+            "சிறுவியாபாரிகளுக்கு ஒழுங்குமுறை சிக்கல்கள் — போதிய வழிகாட்டல் இல்லாமை.",
+          ],
+        },
+      ],
+      form: {
+        title: "சரிபார்க்கப்பட்ட வழக்கை சேர்க்கவும்",
+        labels: {
+          name: "பெயர் (விருப்பம்)",
+          location: "இடம்",
+          date: "தேதி",
+          category: "பகுப்பு",
+          description: "விளக்கம் (என்ன நடந்தது)",
+          source: "மூலம் URL (ஆதாரம்)",
+          consent: "இந்த தகவலைப் பகிர அனுமதி உள்ளது",
+          submit: "வழக்கைச் சேர்க்கவும்",
+        },
+      },
+    },
     contact: {
       heading: "தொடர்பு",
       addressTitle: "அலுவலகம் / பகுதி",
@@ -194,7 +372,7 @@ const Logo = () => (
   </div>
 );
 
-const Nav = ({ t, onSwitch, isTA }) => (
+const Nav = ({ t, onSwitch }) => (
   <header className="backdrop-blur bg-white/70 sticky top-0 z-50 border-b">
     <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <Logo />
@@ -204,12 +382,12 @@ const Nav = ({ t, onSwitch, isTA }) => (
         <a href="#leader" className="hover:text-emerald-700">{t.nav.leader}</a>
         <a href="#legacy" className="hover:text-emerald-700">{t.nav.legacy}</a>
         <a href="#reports" className="hover:text-emerald-700">{t.nav.reports}</a>
+        <a href="#affected" className="hover:text-emerald-700">{t.nav.affected}</a>
         <a href="#contact" className="hover:text-emerald-700">{t.nav.contact}</a>
       </nav>
       <button
         onClick={onSwitch}
         className="px-3 py-1.5 rounded-2xl border shadow-sm text-sm hover:shadow transition"
-        aria-label={`Switch language to ${t.switchTo}`}
       >
         {t.switchTo}
       </button>
@@ -309,10 +487,9 @@ const Reports = ({ t, lang }) => {
   const [form, setForm] = useState({ title: "", summary: "", url: "" });
 
   useEffect(() => {
-    // When language switches, show the language's starter sample.
     setRows(t.reports.sample);
     setForm({ title: "", summary: "", url: "" });
-  }, [lang]);
+  }, [lang, t.reports.sample]);
 
   const addRow = (e) => {
     e.preventDefault();
@@ -388,6 +565,151 @@ const Reports = ({ t, lang }) => {
   );
 };
 
+const Affected = ({ t }) => {
+  const [cases, setCases] = useState([]);
+  const [form, setForm] = useState({
+    name: "",
+    location: "",
+    date: "",
+    category: "",
+    description: "",
+    source: "",
+    consent: false,
+  });
+
+  const addCase = (e) => {
+    e.preventDefault();
+    if (!form.consent || !form.location || !form.date || !form.description) return;
+    setCases((prev) => [...prev, form]);
+    setForm({ name: "", location: "", date: "", category: "", description: "", source: "", consent: false });
+  };
+
+  return (
+    <section id="affected" className="max-w-6xl mx-auto px-4 py-14">
+      <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
+        <h2 className="text-2xl md:text-3xl font-bold">{t.affected.heading}</h2>
+        <p className="mt-2 text-sm text-slate-600">{t.affected.disclaimer}</p>
+
+        <div className="mt-6 grid md:grid-cols-2 gap-4">
+          {t.affected.categories.map((cat, idx) => (
+            <details key={idx} className="group rounded-3xl border bg-white shadow-sm">
+              <summary className="cursor-pointer list-none p-5 flex items-center justify-between">
+                <span className="font-semibold">{cat.area}</span>
+                <span className="text-slate-400 group-open:rotate-180 transition">▼</span>
+              </summary>
+              <div className="px-5 pb-5">
+                <ul className="list-disc pl-6 text-slate-700 space-y-2">
+                  {cat.impacts.map((im, i) => (
+                    <li key={i}>{im}</li>
+                  ))}
+                </ul>
+              </div>
+            </details>
+          ))}
+        </div>
+
+        <div className="mt-10 p-5 rounded-3xl border bg-emerald-50/50">
+          <h3 className="font-semibold">{t.affected.form.title}</h3>
+          <form onSubmit={addCase} className="mt-4 grid md:grid-cols-2 gap-3">
+            <input
+              className="p-3 rounded-2xl border bg-white"
+              value={form.name}
+              onChange={(e) => setForm({ ...form, name: e.target.value })}
+              placeholder={t.affected.form.labels.name}
+            />
+            <input
+              className="p-3 rounded-2xl border bg-white"
+              value={form.location}
+              onChange={(e) => setForm({ ...form, location: e.target.value })}
+              placeholder={t.affected.form.labels.location}
+              required
+            />
+            <input
+              type="date"
+              className="p-3 rounded-2xl border bg-white"
+              value={form.date}
+              onChange={(e) => setForm({ ...form, date: e.target.value })}
+              placeholder={t.affected.form.labels.date}
+              required
+            />
+            <select
+              className="p-3 rounded-2xl border bg-white"
+              value={form.category}
+              onChange={(e) => setForm({ ...form, category: e.target.value })}
+            >
+              <option value="">{t.affected.form.labels.category}</option>
+              {t.affected.categories.map((c, i) => (
+                <option key={i} value={c.area}>{c.area}</option>
+              ))}
+            </select>
+            <textarea
+              className="md:col-span-2 p-3 rounded-2xl border bg-white min-h-[120px]"
+              value={form.description}
+              onChange={(e) => setForm({ ...form, description: e.target.value })}
+              placeholder={t.affected.form.labels.description}
+              required
+            />
+            <input
+              className="md:col-span-2 p-3 rounded-2xl border bg-white"
+              value={form.source}
+              onChange={(e) => setForm({ ...form, source: e.target.value })}
+              placeholder={t.affected.form.labels.source}
+            />
+            <label className="md:col-span-2 flex items-center gap-2 text-sm text-slate-600">
+              <input
+                type="checkbox"
+                checked={form.consent}
+                onChange={(e) => setForm({ ...form, consent: e.target.checked })}
+              />
+              {t.affected.form.labels.consent}
+            </label>
+            <div className="md:col-span-2">
+              <button className="px-4 py-2 rounded-2xl bg-emerald-600 text-white hover:bg-emerald-700 shadow">
+                {t.affected.form.labels.submit}
+              </button>
+            </div>
+          </form>
+
+          {cases.length > 0 && (
+            <div className="mt-6 overflow-x-auto">
+              <table className="w-full text-left text-sm border-separate [border-spacing:0] rounded-2xl overflow-hidden">
+                <thead>
+                  <tr className="bg-white">
+                    <th className="p-3 border-b font-semibold">Name</th>
+                    <th className="p-3 border-b font-semibold">Location</th>
+                    <th className="p-3 border-b font-semibold">Date</th>
+                    <th className="p-3 border-b font-semibold">Category</th>
+                    <th className="p-3 border-b font-semibold">Description</th>
+                    <th className="p-3 border-b font-semibold">Source</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {cases.map((c, i) => (
+                    <tr key={i} className="odd:bg-white even:bg-emerald-50/40">
+                      <td className="p-3 border-b align-top">{c.name || "—"}</td>
+                      <td className="p-3 border-b align-top">{c.location}</td>
+                      <td className="p-3 border-b align-top">{c.date}</td>
+                      <td className="p-3 border-b align-top">{c.category || "—"}</td>
+                      <td className="p-3 border-b align-top whitespace-pre-wrap">{c.description}</td>
+                      <td className="p-3 border-b align-top">
+                        {c.source ? (
+                          <a className="text-emerald-700 underline break-all" href={c.source} target="_blank" rel="noreferrer">{c.source}</a>
+                        ) : (
+                          <span className="text-slate-400">—</span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </div>
+      </motion.div>
+    </section>
+  );
+};
+
 const Contact = ({ t }) => (
   <section id="contact" className="max-w-6xl mx-auto px-4 py-14">
     <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
@@ -411,7 +733,6 @@ const Contact = ({ t }) => (
           <h3 className="font-semibold">Map</h3>
           <p className="mt-2 text-slate-700 text-sm">{t.contact.mapNote}</p>
           <div className="mt-3 aspect-video rounded-2xl bg-slate-100 flex items-center justify-center text-slate-400">
-            {/* Embed Google Map iframe here */}
             <span>Map placeholder</span>
           </div>
         </div>
@@ -438,7 +759,6 @@ export default function LuckyMuruganSite() {
   const t = useMemo(() => content[lang], [lang]);
 
   useEffect(() => {
-    // Respect user's preferred language on first load
     const prefersTA = typeof navigator !== 'undefined' &&
       (navigator.language?.toLowerCase().startsWith('ta') ||
        navigator.languages?.some(l => l.toLowerCase().startsWith('ta')));
@@ -447,13 +767,13 @@ export default function LuckyMuruganSite() {
 
   return (
     <main className="font-sans text-slate-800">
-      {/* Tailwind is expected to be available in the build toolchain */}
-      <Nav t={t} onSwitch={() => setLang(lang === 'en' ? 'ta' : 'en')} isTA={lang === 'ta'} />
+      <Nav t={t} onSwitch={() => setLang(lang === 'en' ? 'ta' : 'en')} />
       <Hero t={t} />
       <About t={t} />
       <Leader t={t} />
       <Legacy t={t} />
       <Reports t={t} lang={lang} />
+      <Affected t={t} />
       <Contact t={t} />
       <Footer t={t} />
     </main>
